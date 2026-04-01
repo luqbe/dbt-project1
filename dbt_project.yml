@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'dbt_bronze'
+name: 'dbt_proj'
 version: '1.0.0'
 config-version: 2
 
@@ -44,9 +44,9 @@ models:
 
     dbt_silver:               # For the models in your 'silver' folder
       +materialized: table     
-      +schema: silver     # The macro will now force this EXACT name
+      +schema: dbt_silver     # The macro will now force this EXACT name
 
     dbt_gold:                 # For the models in your 'gold' folder
       +materialized: view      
-      +schema: gold       # The macro will now force this EXACT name
+      +schema: dbt_gold       # The macro will now force this EXACT name
       
