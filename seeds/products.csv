@@ -1,0 +1,21 @@
+product_id,product_name,category,price,stock_qty
+1,Laptop,Electronics,55000.00,10
+2,Mobile Phone,Electronics,20000.00,25
+3,Headphones,Accessories,1500.00,50
+4,Keyboard,Accessories,800.00,40
+5,Mouse,Accessories,600.00,60
+6,Monitor,Electronics,12000.00,15
+7,Printer,Electronics,9000.00,8
+8,Desk Chair,Furniture,7000.00,20
+9,Office Table,Furniture,15000.00,5
+10,Backpack,Bags,1200.00,30
+11,Water Bottle,Home,500.00,100
+12,Shoes,Fashion,2500.00,35
+13,T-Shirt,Fashion,800.00,70
+14,Watch,Accessories,3000.00,20
+15,Tablet,Electronics,18000.00,12
+16,Camera,Electronics,45000.00,6
+17,Speaker,Electronics,3500.00,18
+18,Power Bank,Accessories,1200.00,45
+19,Notebook,Stationery,100.00,200
+20,Pen Set,Stationery,300.00,150

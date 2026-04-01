@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: dbt_bronze
+    database: dbt_test
+    schema: dbt_bronze
+    tables:
+      - name: customer
+      - name: orders
+      - name: products
