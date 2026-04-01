@@ -1,0 +1,21 @@
+customer_id,name,email,city,created_at
+1,Aarav Kumar,aarav@gmail.com,Chennai,2026-03-26T12:59:08.368Z
+2,Isha Sharma,isha@gmail.com,Delhi,2026-03-26T12:59:08.368Z
+3,Rohan Das,rohan@gmail.com,Kolkata,2026-03-26T12:59:08.368Z
+4,Meera Iyer,meera@gmail.com,Bangalore,2026-03-26T12:59:08.368Z
+5,Arjun Singh,arjun@gmail.com,Mumbai,2026-03-26T12:59:08.368Z
+6,Sneha Reddy,sneha@gmail.com,Hyderabad,2026-03-26T12:59:08.368Z
+7,Karan Patel,karan@gmail.com,Ahmedabad,2026-03-26T12:59:08.368Z
+8,Priya Nair,priya@gmail.com,Kochi,2026-03-26T12:59:08.368Z
+9,Rahul Verma,rahul@gmail.com,Pune,2026-03-26T12:59:08.368Z
+10,Anjali Gupta,anjali@gmail.com,Delhi,2026-03-26T12:59:08.368Z
+11,Vikram Rao,vikram@gmail.com,Chennai,2026-03-26T12:59:08.368Z
+12,Neha Joshi,neha@gmail.com,Mumbai,2026-03-26T12:59:08.368Z
+13,Suresh Babu,suresh@gmail.com,Hyderabad,2026-03-26T12:59:08.368Z
+14,Divya Menon,divya@gmail.com,Kochi,2026-03-26T12:59:08.368Z
+15,Manoj Yadav,manoj@gmail.com,Lucknow,2026-03-26T12:59:08.368Z
+16,Pooja Singh,pooja@gmail.com,Jaipur,2026-03-26T12:59:08.368Z
+17,Ravi Teja,ravi@gmail.com,Hyderabad,2026-03-26T12:59:08.368Z
+18,Kavya Shetty,kavya@gmail.com,Mangalore,2026-03-26T12:59:08.368Z
+19,Deepak Kumar,deepak@gmail.com,Patna,2026-03-26T12:59:08.368Z
+20,Nisha Agarwal,nisha@gmail.com,Kolkata,2026-03-26T12:59:08.368Z
