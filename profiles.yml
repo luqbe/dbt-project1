@@ -1,0 +1,11 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      catalog: dbt_project
+      schema: SCHEMA_NAME
+      host: YOUR_ORG.databrickshost.com
+      http_path: /SQL/YOUR/HTTP/PATH
+      auth_type: oauth
+      threads: 1

@@ -1,0 +1,39 @@
+version: 2
+
+sources:
+  - name: dbt
+    database: "{{ target.catalog }}"
+    schema: dbt_bronze
+
+    # --- 1. SOURCE FRESHNESS ---
+    # This sets the default freshness rule for ALL tables in this source
+
+    tables:
+      - name: customer
+        columns:
+          - name: customer_id
+            # --- 2. GENERIC TESTS ---
+            tests:
+              - unique # Ensures no two customers have the same ID
+              - not_null # Ensures the ID is never blank
+          - name: email_address
+            tests:
+              - unique
+
+      - name: orders
+        # You can override the default freshness for a specific table!
+        # Orders might need to be checked more frequently than customers.
+
+        columns:
+          - name: order_id
+            tests:
+              - unique
+              - not_null
+          - name: status
+           
+      - name: products
+        columns:
+          - name: product_id
+            tests:
+              - unique
+              - not_null
