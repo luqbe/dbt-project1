@@ -3,7 +3,7 @@ default:
   outputs:
     dev:
       type: databricks
-      catalog: dbt_project
+      catalog: dbt_sample
       schema: SCHEMA_NAME
       host: YOUR_ORG.databrickshost.com
       http_path: /SQL/YOUR/HTTP/PATH
