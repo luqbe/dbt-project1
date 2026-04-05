@@ -1,0 +1,33 @@
+version: 2
+
+sources:
+  - name: dbt
+    database: "{{ target.catalog }}"
+    
+
+    tables:
+      - name: customer
+        columns:
+          - name: customer_id
+            # --- 2. GENERIC TESTS ---
+            tests:
+              - unique # Ensures no two customers have the same ID
+              - not_null # Ensures the ID is never blank
+          - name: email_address
+            tests:
+              - unique
+
+      - name: orders
+        columns:
+          - name: order_id
+            tests:
+              - unique
+              - not_null
+          - name: status
+           
+      - name: products
+        columns:
+          - name: product_id
+            tests:
+              - unique
+              - not_null

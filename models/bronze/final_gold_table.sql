@@ -1,5 +1,3 @@
--- models/gold/rpt_sales_overview.sql
-
 with orders as (
     select * from {{ ref('orders_intermediate') }}
 ),
