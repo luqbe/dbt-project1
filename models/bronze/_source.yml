@@ -13,7 +13,7 @@ sources:
             tests:
               - unique # Ensures no two customers have the same ID
               - not_null # Ensures the ID is never blank
-          - name: email_address
+          - name: email
             tests:
               - unique
               - not_null
