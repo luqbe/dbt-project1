@@ -1,5 +1,3 @@
--- models/silver/slv_orders.sql
-
 with staging_orders as (
     select * from {{ ref('orders_staging') }}
 ),
@@ -18,8 +16,7 @@ cleaned_orders as (
         quantity
 
     from staging_orders
-    where order_id is not null 
-      and customer_id is not null -- Drop orphan records
+    
 )
 
 select * from cleaned_orders

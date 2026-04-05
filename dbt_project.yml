@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'dbt_proj'
+name: 'dbt_test1'
 version: '1.0.0'
 config-version: 2
 
@@ -35,18 +35,22 @@ clean-targets:         # directories to be removed by `dbt clean`
 # continue to be built as views. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 
+
+seeds:
+  dbt_test1:      # This must match the 'name:' at the top of your file
+    +schema: bronze
+    +quote_columns: false # Recommended for most warehouses to avoid case issues
+
 models:
-  dbt_proj:    # Replace with your actual project name
-    
-    dbt_bronze:               # Assuming your staging models are in a folder named 'bronze'
-      +materialized: view      
-      +schema: dbt_bronze # Forces these into dbt_bronze
-
-    dbt_silver:               # For the models in your 'silver' folder
+  dbt_test1:    # Replace with your actual project name
+   bronze:
+      +materialized: table
+      +schema: bronze
+   silver:               # For the models in your 'silver' folder
       +materialized: table     
-      +schema: dbt_silver     # The macro will now force this EXACT name
+      +schema: silver     # The macro will now force this EXACT name
 
-    dbt_gold:                 # For the models in your 'gold' folder
-      +materialized: view      
-      +schema: dbt_gold       # The macro will now force this EXACT name
+   gold:                 # For the models in your 'gold' folder
+      +materialized: table      
+      +schema: gold       # The macro will now force this EXACT name
       
