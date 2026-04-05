@@ -37,14 +37,14 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   dbt_sample:    # Replace with your actual project name
-   dbt_bronze:
+   bronze:
       +materialized: table
-      +schema: dbt_bronze
-   dbt_silver:               # For the models in your 'silver' folder
+      +schema: bronze
+   silver:               # For the models in your 'silver' folder
       +materialized: table     
-      +schema: dbt_silver     # The macro will now force this EXACT name
+      +schema: silver     # The macro will now force this EXACT name
 
-   dbt_gold:                 # For the models in your 'gold' folder
+   gold:                 # For the models in your 'gold' folder
       +materialized: table      
-      +schema: dbt_gold       # The macro will now force this EXACT name
+      +schema: gold       # The macro will now force this EXACT name
       
