@@ -16,6 +16,7 @@ sources:
           - name: email_address
             tests:
               - unique
+              - not_null
 
       - name: orders
         columns:
