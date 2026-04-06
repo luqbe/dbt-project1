@@ -1,4 +1,4 @@
-# 📌 LinkedIn Post - Technical Deep Dive Version
+# 📌DBT - Technical Deep Dive
 
 🏗️ Building Scalable Data Pipelines: dbt + Databricks Medallion Architecture
 
